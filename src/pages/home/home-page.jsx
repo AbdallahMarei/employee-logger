@@ -83,6 +83,9 @@ function Home() {
               .includes(searchField.applicationId.toString())
           : "")
     );
+    if(filteredEmployees.length === 0){
+      alert("no result found");
+    }
     setFilteredEmployees(filteredEmployees);
   };
 
